@@ -1,6 +1,10 @@
+.app {
+  background-color: #A7383D;
+  height: 100%;
+}
+
 .header {
   text-align: center;
-  background-color: #282c34;
   min-height: 10vh;
   display: flex;
   justify-content: center;
@@ -20,16 +24,49 @@
 .generate-button {
   max-width: 100px;
   margin-top: 20px;
+  background-color: white;
+  color: #A7383D;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+.generate-button:hover {
+  background-color: lightgrey;
+  color: black;
 }
 
 .category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   max-width: 750px;
   width: 80vw;
-  height: 200px;
+  height: 150px;
   text-align: center;
   list-style: none;
   border-radius: 10px;
   border: 1px solid black;
   margin-top: 20px;
-  background-color: lightblue;
+}
+
+.emotions {
+  background-color: #7D9F35;
+}
+
+.relationships {
+  background-color: #378B2E;
+}
+
+.settings {
+  background-color: #236A62;
+}
+
+.category-text {
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
 }

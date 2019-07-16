@@ -21,7 +21,7 @@ var relationships = [
   'Aunt',
   'Nephew',
   'Niece',
-  'First Cousin',
+  'Cousin',
   'Second Cousin',
   'Boss',
   'Coworker',

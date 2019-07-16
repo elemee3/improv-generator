@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
+
 import emotions from './emotions';
 import relationships from './relationships';
 import settings from './settings';
+
+import emotionsImg from './emotions_img.png';
+import relationshipsImg from './relationships_img.png';
+import locationsImg from './locations_img.png';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      emotion: '',
-      relationship: '',
-      setting: ''
+      emotion: 'Emotion',
+      relationship: 'Relationship',
+      setting: 'Setting'
     };
   }
 
@@ -33,15 +38,21 @@ class App extends Component {
         </header>
         <div className="body">
           <button className="generate-button" onClick={this.generate}>Generate</button>
-          <div className="category">
-            Emotion: {this.state.emotion}
+          <div className="category emotions">
+            <img src={emotionsImg} width="100px" />
+            <h2 className="category-text">{this.state.emotion}</h2>
           </div>
-          <div className="category">
-            Relationship: {this.state.relationship}
+          <div className="category relationships">
+            <h2 className="category-text">{this.state.relationship}</h2>
+            <img src={relationshipsImg} width="100px" />
           </div>
-          <div className="category">
-            Setting: {this.state.setting}
+          <div className="category settings">
+            <img src={locationsImg} width="100px" />
+            <h2 className="category-text">{this.state.setting}</h2>
           </div>
+        </div>
+        <div className="footer">
+          <p>Leila M. Elshamy 2019</p>
         </div>
       </div>
     );
